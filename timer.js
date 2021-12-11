@@ -27,7 +27,7 @@
             seconds = Math.floor(leftUntilTime / 1000) % 60;
 
         if (leftUntilTime < 0) {
-            document.querySelector('.title').innerText = 'С Новым годом!';
+            document.querySelector('.title').innerText = 'С Новым Годом!';
             document.querySelector('.time-count__content').style.display = 'none';
             document.querySelector('.emoji').style.display = 'flex';
             clearInterval(interval);
