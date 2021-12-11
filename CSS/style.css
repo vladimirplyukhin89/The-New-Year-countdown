@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #ffd54f;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-image: url("../img/NY.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  margin-top: 15vh;
+  background: #fafafa;
+  box-shadow: 4px 8px 40px rbga(8, 24, 111, 0.2);   
+  border-radius: 30px;
+  width: 500px;
+  height: 230px;
+  padding: 30px 33px; 
+}
+
+.time-count__content {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 47px;
+  text-align: center;
+  color: #4D4D4D;
+}
+
+.time-count__item {
+  text-align: center;
+}
+
+.time-count__value {
+  min-width: 81px;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 82px;
+  color: #5D71DD;
+}
+
+.time-count__separator {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  color: #5D71DD;
+  margin: 0 10px;
+  line-height: 75px;
+}
+
+.time-count__text {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.emoji {
+  display: none;
+  padding: 1rem;
+}
+
+.emoji span {
+  font-size: 4rem;
+  padding: 0 .5rem;
+}
+
