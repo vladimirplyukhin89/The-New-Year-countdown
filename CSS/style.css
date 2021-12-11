@@ -1,3 +1,7 @@
+:root {
+  --smaller: .75;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -85,5 +89,20 @@ body {
 .emoji span {
   font-size: 4rem;
   padding: 0 .5rem;
+}
+
+
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: calc(1.5rem * var(--smaller));
+  }
+  
+  .time-count__item {
+    font-size: calc(1.125rem * var(--smaller));
+  }
+  
+  span {
+    font-size: calc(3.375rem * var(--smaller));
+  }
 }
 
