@@ -21,6 +21,8 @@ body {
 }
 
 .container {
+  width: auto;
+  height: inherit;
   margin-top: 15vh;
   background: #fafafa;
   box-shadow: 4px 8px 40px rbga(8, 24, 111, 0.2);   
