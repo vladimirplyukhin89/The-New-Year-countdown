@@ -1,5 +1,5 @@
 {
-    let date = new Date('Jan 1 2022 00:00:00');
+    let date = new Date('Dec 15 2021 00:00:00');
 
     const daysValue = document.querySelector('.days .time-count__value'),
         hoursValue = document.querySelector('.hours .time-count__value'),
@@ -26,7 +26,8 @@
             minutes = Math.floor(leftUntilTime / 1000 / 60) % 60,
             seconds = Math.floor(leftUntilTime / 1000) % 60;
 
-        if (leftUntilTime < 0) {
+
+        if (leftUntilTime <= 0) {
             document.querySelector('.title').innerText = 'С Новым Годом!';
             document.querySelector('.time-count__content').style.display = 'none';
             document.querySelector('.emoji').style.display = 'flex';
@@ -37,13 +38,16 @@
             minutesValue.textContent = minutes;
             secondsValue.textContent = seconds;
         }
-
         daysText.textContent = declOfNum(days, ['день', 'дня', 'дней']);
         hoursText.textContent = declOfNum(hours, ['час', 'часа', 'часов']);
         minutesText.textContent = declOfNum(minutes, ['минута', 'минуты', 'минут']);
         secondsText.textContent = declOfNum(seconds, ['секунда', 'секунды', 'секунд']);
-
     }
+
+    //let counter = new Date('Dec 26 2021 00:00:00').getDate() - new Date().getDate();
+    //console.log(counter);
+    //let checkDate = 26 - new Date().getDate();
+    //console.log(checkDate);
 
     countTime();
     let interval = setInterval(countTime, 1000)
