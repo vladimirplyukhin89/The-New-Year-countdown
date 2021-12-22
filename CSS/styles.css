@@ -1,0 +1,67 @@
+.page {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("../img/NY.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.timer-container {
+    position: absolute;
+    top: 20vh;
+    left: 35em;
+    width: 400px;
+    box-shadow: 4px 8px 40px rbga(8, 24, 111, 0.2);  
+    border-radius: 30px;
+    height: 200px;
+    background-color: rgba(209,190,168, 0.5)
+}
+
+.time-count__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-weight: 900;
+    line-height: 47px;
+    color: var(--text-color);
+}
+
+.time-count__value { 
+    min-width: 80px;
+    font-size: 70px;
+    line-height: 82px;
+}
+
+.time-count__separator {
+    margin: 0 5px;
+    padding-bottom: 25px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    color: #5D71DD;
+    line-height: 75px;
+}
+
+.time-count__text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 20px;
+}
+
+.modal {
+    display: none;
+}
+
+
