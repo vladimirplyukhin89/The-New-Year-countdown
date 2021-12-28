@@ -33,7 +33,6 @@ body {
   left: 30vw;
   width: auto;
   height: inherit;
-  background: var(--second-bg-color);
   box-shadow: 4px 8px 40px rbga(8, 24, 111, 0.2);   
   border-radius: 30px;
   width: 500px;
