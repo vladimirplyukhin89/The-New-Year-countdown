@@ -1,4 +1,23 @@
-.header__welcome {
+.header {
     position: absolute;
-    top: 100px;
+    top: 10%;
 }
+
+.header__navigation {
+    position: absolute;
+    top: 10px;
+}
+
+.santa_hat {
+    display: block;
+    position: absolute;
+    bottom: 9px;
+    left: 2px;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    /*display: none;*/
+}
+

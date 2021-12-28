@@ -10,32 +10,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="ball/ball.css">
-    <!--<link rel="stylesheet" href="CSS/modal.css">-->
     <script defer src="/ball/ball.js"></script>
     <script defer src="/js/timer.js"></script>
     <script defer src="/js/input.js"></script>
     <script defer src="/js/snow.js"></script>
+    <script defer src="/js/burger.js"></script>
     <!--<audio src="/audio/Bing Crosby - I Wish You A Merry Christmas (Remastered).mp3" autoplay="true"></audio>-->
-    <audio src="/audio/Frank Sinatra - Let It Snow (Remastered).mp3" autoplay="true"></audio>
+    <!--<audio src="/audio/Frank Sinatra - Let It Snow (Remastered).mp3" autoplay="true"></audio>-->
     <title>New Year</title>
 </head>
 
 <body class="page">
     <header class="header">
-        <nav class="header__navigation">
-            <!--<button class="burger">
-                <span class="burger__line">dfgdg</span>
-            </button>-->
-            <div class="header__welcome">
+        <button class="burger header__burger">
+            <img src="/img/hat.png" alt="Santa hat" class="santa_hat" width="35" height="30">
+            <span class="burger__line"></span>
+        </button>
+        <nav class="header__navigation navigation">
+            <div class="welcome">
+                <p class="welcome-text">Tell me your name</p>
                 <input id="some-text" type="text">
-                <button class="header-btn">Tell me your name</button>
+                <button class="header-btn">Push</button>
             </div>
         </nav>
     </header>
     <main>
         <div class="main-container">
             <div class="timer-container">
-                <h1 class="title">New Year is coming soon!</h1>
+                <h1 class="title">Holidays are coming soon!</h1>
                 <div class="time-count__content">
                     <div class="time-count__item days">
                         <div class="time-count__value">00</div>
@@ -78,7 +80,7 @@
                 <div class="snow"></div>
                 <img src="./img/tree.png" alt="Christmas tree" class="tree">
             </div>
-            <h2 class="out">Happy<br> New Year, <span class="out-text"></span></h2>
+            <h2 class="out">A Happy<br> New Year, <span class="out-text"></span></h2>
         </div>
     </footer>
     <div class="b-page_newyear">

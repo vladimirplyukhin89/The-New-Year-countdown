@@ -8,7 +8,7 @@
 .footer__container {
     overflow: hidden;
     position: absolute;
-    bottom: 8vh;
+    top: 60vh;
     width: 500px;
     height: 250px;
     background-color: #c50e0e;
