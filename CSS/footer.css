@@ -75,10 +75,10 @@
     font-weight: 700;
 }
 
-.out-text {
+/*.out-text {
     animation-name: Text;
     animation-duration: 3s;
-}
+}*/
 
 .snow {
     position: absolute;
@@ -149,14 +149,14 @@
     }   
 }
 
-@keyframes Text {
+/*@keyframes Text {
     0% {
         opacity: 0;
     }
     100% {
         opacity: 1;
     }
-}
+}*/
 
 
 
