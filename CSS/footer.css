@@ -73,7 +73,11 @@
     left: 260px;
     font-size: 46px;
     font-weight: 700;
+}
 
+.out-text {
+    animation-name: Text;
+    animation-duration: 3s;
 }
 
 .snow {
@@ -143,6 +147,15 @@
         background-position-y: 600px;
         
     }   
+}
+
+@keyframes Text {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 
