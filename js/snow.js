@@ -1,5 +1,3 @@
-// As shown by Paul Lewis here:
-// https://www.youtube.com/watch?v=VW8qoyYzWGg&t=0s
 class SnowFlake {
     constructor() {
         this.reset();

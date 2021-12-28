@@ -6,6 +6,7 @@
 }
 
 .footer__container {
+    overflow: hidden;
     position: absolute;
     bottom: 8vh;
     width: 500px;
@@ -69,7 +70,7 @@
 .out {
     position: absolute;
     top: 30px;
-    left: 270px;
+    left: 260px;
     font-size: 46px;
     font-weight: 700;
 

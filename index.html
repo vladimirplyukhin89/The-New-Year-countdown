@@ -10,56 +10,62 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="ball/ball.css">
-    <!--<audio src="/audio/Bing Crosby - I Wish You A Merry Christmas (Remastered).mp3" autoplay="true"></audio>-->
-    <!--<audio src="/audio/Frank Sinatra - Let It Snow (Remastered).mp3"></audio>-->
+    <!--<link rel="stylesheet" href="CSS/modal.css">-->
     <script defer src="/ball/ball.js"></script>
     <script defer src="/js/timer.js"></script>
-    <title>Timer</title>
+    <script defer src="/js/input.js"></script>
+    <script defer src="/js/snow.js"></script>
+    <!--<audio src="/audio/Bing Crosby - I Wish You A Merry Christmas (Remastered).mp3" autoplay="true"></audio>-->
+    <audio src="/audio/Frank Sinatra - Let It Snow (Remastered).mp3" autoplay="true"></audio>
+    <title>New Year</title>
 </head>
 
 <body class="page">
     <header class="header">
-        <!--<div class="container">-->
         <nav class="header__navigation">
-            <div class="modal">
-                <p class="name">Tell me your name</p>
+            <!--<button class="burger">
+                <span class="burger__line">dfgdg</span>
+            </button>-->
+            <div class="header__welcome">
+                <input id="some-text" type="text">
+                <button class="header-btn">Tell me your name</button>
             </div>
         </nav>
-        <!--</div>-->
     </header>
     <main>
-        <div class="timer-container">
-            <h1 class="title">New Year is coming soon!</h1>
-            <div class="time-count__content">
-                <div class="time-count__item days">
-                    <div class="time-count__value">00</div>
-                    <span class="time-count__text">days</span>
-                </div>
-                <div class="time-count__separator">:</div>
+        <div class="main-container">
+            <div class="timer-container">
+                <h1 class="title">New Year is coming soon!</h1>
+                <div class="time-count__content">
+                    <div class="time-count__item days">
+                        <div class="time-count__value">00</div>
+                        <span class="time-count__text">days</span>
+                    </div>
+                    <div class="time-count__separator">:</div>
 
-                <div class="time-count__item hours">
-                    <div class="time-count__value">00</div>
-                    <span class="time-count__text">hours</span>
-                </div>
-                <div class="time-count__separator">:</div>
+                    <div class="time-count__item hours">
+                        <div class="time-count__value">00</div>
+                        <span class="time-count__text">hours</span>
+                    </div>
+                    <div class="time-count__separator">:</div>
 
-                <div class="time-count__item minutes">
-                    <div class="time-count__value">00</div>
-                    <span class="time-count__text">minutes</span>
-                </div>
-                <div class="time-count__separator">:</div>
+                    <div class="time-count__item minutes">
+                        <div class="time-count__value">00</div>
+                        <span class="time-count__text">minutes</span>
+                    </div>
+                    <div class="time-count__separator">:</div>
 
-                <div class="time-count__item seconds">
-                    <div class="time-count__value">00</div>
-                    <span class="time-count__text">seconds</span>
+                    <div class="time-count__item seconds">
+                        <div class="time-count__value">00</div>
+                        <span class="time-count__text">seconds</span>
+                    </div>
+                </div>
+                <div class="time-count__content emoji">
+                    <span>🥳</span>
+                    <span>🎉</span>
+                    <span>🎂</span>
                 </div>
             </div>
-            <div class="time-count__content emoji">
-                <span>🥳</span>
-                <span>🎉</span>
-                <span>🎂</span>
-            </div>
-            <div class="tree"></div>
         </div>
     </main>
     <footer class="footer">

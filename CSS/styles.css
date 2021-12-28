@@ -10,10 +10,17 @@
 
 }
 
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .timer-container {
     position: absolute;
     top: 20vh;
-    left: 35em;
+    /*left: 35em;*/
     width: 420px;
     box-shadow: 4px 8px 40px rbga(8, 24, 111, 0.2);  
     border-radius: 30px;
