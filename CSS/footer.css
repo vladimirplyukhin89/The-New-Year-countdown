@@ -71,14 +71,20 @@
     position: absolute;
     top: 30px;
     left: 260px;
-    font-size: 46px;
+    font-size: calc(26px + 20 * ((100vw - 320px) / (1280 - 320)));
     font-weight: 700;
 }
 
-/*.out-text {
-    animation-name: Text;
-    animation-duration: 3s;
-}*/
+.out-text {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 2s, visibility 2s;
+}
+
+.appear {
+    opacity: 1;
+    visibility: visible;
+}
 
 .snow {
     position: absolute;
@@ -149,14 +155,6 @@
     }   
 }
 
-/*@keyframes Text {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}*/
 
 
 

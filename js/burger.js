@@ -1,22 +1,5 @@
-//const burgerMenu = (param) => {
-//    const {
-//        selectorBurger = '.burger',
-//        activeBurger = 'burger_active',
-//        selectorMenu,
-//        openMenuSelector
-//    } = param;
-
-//    const burger = document.querySelector(selectorBurger);
-//    const menu = document.querySelector(selectorMenu);
-
-//    burger.addEventListener('click', () => {
-//        burger.classList.toggle(activeBurger);
-//        menu.classList.toggle(openMenuSelector);
-//    })
-
-//};
-
 {
+    const input = document.getElementById('some-text');
     const burger = document.querySelector('.burger');
     const navigation = document.querySelector('.navigation');
     const hat = document.querySelector('.santa_hat');
@@ -27,6 +10,7 @@
 
         if (hat.style.display === 'none') {
             hat.style.display = 'block';
+            input.value = '';
         } else {
             hat.style.display = 'none';
         }

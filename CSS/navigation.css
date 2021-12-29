@@ -2,9 +2,6 @@
 .header__navigation {
     width: 200px;
     height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #940000;
     border: 2px solid #fff;
     border-radius: 10px;
@@ -13,33 +10,44 @@
     z-index: 2;
 }
 
+.navigation {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.navigation_active {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 2s;
+}
+
 .welcome {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 8px;
+    font-size: calc(16px + 6 * ((100vw - 320px) / (1280 - 320)));
 }
 
 .welcome-text {
     display: flex;
     justify-content: center;
-    /*flex-direction: column;*/
     align-items: center;
 }
 
-.some-text {
-    /*border-radius: 15px;*/
-    width: 15px;
-    max-width: 20px;
+#some-text {
+    border: 2px solid #fff;
+    border-radius: 5px;
+    /*max-width: 152px;*/
 }
+
 
 .header-btn {
     color: #fff;
     border: 2px solid #fff;
-    width: 50px;
-    display: flex;
-    justify-content: center;
     background-color: #ffd54f;
     border-radius: 5px;
-    margin: 0 auto;
+    margin: 0 10px;
 }
 
 .header-btn:hover {
@@ -49,24 +57,84 @@
    position: relative;
 }
 
-/*.header-btn:before {
-     position: absolute;
-  content: "";
-  width: 45px;
-  height: 25px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #f9c4d2;
-  border-radius: inherit;
-  /*box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;*/
-  /*transform: translate3d(0, 0.75em, -1em);
-  transition: transform 0.15s, box-shadow 0.15s;*/
-/*}*/
-
 .header-btn:active {
     box-shadow: 0 3px 0 #940000;
     top: 3px;
 }
 
+.div-btn {
+    display: flex;
+}
+
+
+@media (max-width: 1440px) {
+   
+    .navigation_active { 
+        width: 280px;
+        height: 140px;
+        left: -45px;
+    }
+    
+    .header__navigation {
+        width: 280px;
+        height: 140px;
+        left: -45px;
+    }  
+}
+
+@media (max-width: 1540px) {
+   .navigation_active { 
+        width: 300px;
+        height: 130px;
+        left: -45px;
+    }
+
+    .header__navigation {
+        width: 300px;
+        height: 130px;
+        left: -45px;
+    }
+
+    #some-text {
+        /*width: 130px;*/
+    }
+
+    .header-btn {
+        height: 30px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .navigation_active {
+        width: 230px;
+        height: 115px;
+        left: -35px;
+    }
+ 
+}
+@media (max-width: 1000px) {
+
+}
+@media (max-width: 760px) {
+    .header__navigation { 
+        width: 260px;
+        height: 120px;
+    }
+
+}
+
+@media (max-width: 580px) {
+    .header__navigation {
+        left: -95px;
+        width: 230px;
+        height: 100px
+    }
+
+    .navigation_active {
+        left: -110px;
+        width: 230px;
+        height: 100px
+    }
+
+   
+}

@@ -1,10 +1,8 @@
-@import "./styles.css";
 @import "./default.css";
+@import "./timer.css";
 @import "./normalize.css";
 @import "./gifts.css";
 @import "./footer.css";
 @import "./header.css";
 @import "./burger.css";
 @import "./navigation.css";
-/*@import "./overlay.css";*/
-/*@import "./modal.css";*/

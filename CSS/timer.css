@@ -19,8 +19,7 @@
 
 .timer-container {
     position: absolute;
-    top: 20vh;
-    /*left: 35em;*/
+    top: 30vh;
     width: 420px;
     box-shadow: 4px 8px 40px rbga(8, 24, 111, 0.2);  
     border-radius: 30px;
@@ -36,7 +35,7 @@
 
 .title {
     text-align: center;
-    font-size: 40px;
+    font-size: calc(30px + 10 * ((100vw - 320px) / (1280 - 320)));
     margin-top: 20px;
     margin-bottom: 0px;
     font-weight: 900;
@@ -46,7 +45,7 @@
 
 .time-count__value { 
     min-width: 80px;
-    font-size: 70px;
+    font-size: calc(40px + 30 * ((100vw - 320px) / (1280 - 320)));
     line-height: 82px;
 }
 
@@ -54,7 +53,7 @@
     margin: 0 5px;
     padding-bottom: 25px;
     font-weight: 700;
-    font-size: 48px;
+    font-size: calc(24px + 24 * ((100vw - 320px) / (1280 - 320)));
     line-height: 56px;
     text-align: center;
     color: #5D71DD;
@@ -63,12 +62,32 @@
 
 .time-count__text {
     font-weight: 400;
-    font-size: 24px;
+    font-size: calc(20px + 4 * ((100vw - 320px) / (1280 - 320)));
     line-height: 20px;
 }
 
-.modal {
+/*.modal {
     display: none;
+}*/
+
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 1000px) {
+
+}
+@media (max-width: 760px) {
+
+}
+
+@media (max-width: 580px) {
+    .timer-container {
+        width: 340px;
+    }
+
+    .time-count__value {
+        min-width: 40px;
+    }
 }
 
 
