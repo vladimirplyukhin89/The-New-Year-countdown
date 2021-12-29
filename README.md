@@ -1,3 +1,3 @@
 <p text-align="center">
-    <img src="/img/screenshot.png">
+    <img src="./assests/img/screenshot.png" width="350" title="Моя Новогодняя открытка друзьям">
 </p>
