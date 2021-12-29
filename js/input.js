@@ -17,9 +17,6 @@
                 out.classList.add('appear');
             }
 
-            //if (input.value === '') {
-            //    out.classList.remove('appear');
-            //}
         })
 
         clear.addEventListener('click', (e) => {

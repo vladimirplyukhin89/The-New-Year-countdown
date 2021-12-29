@@ -56,27 +56,26 @@
     transform: rotate(-45deg);
 }
 
-@media (max-width: 1440px) {
-   
-}
-@media (max-width: 1200px) {
-
-}
 @media (max-width: 1000px) {
-    
     .burger {
         left: 260px;
     }
-
-}
-@media (max-width: 760px) {
-
 }
 
 @media (max-width: 580px) {
-    
     .burger {
         left: 160px;
+    } 
+}
+
+@media (max-width: 480px) {
+    .burger {
+        left: 150px;
     }
-    
+}
+
+@media (max-width: 320px) {
+    .burger {
+        left: 140px;
+    }
 }

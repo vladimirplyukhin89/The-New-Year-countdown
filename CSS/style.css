@@ -25,6 +25,7 @@ body {
   background-image: url("../img/NY.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 50% auto;
 }
 
 .container {

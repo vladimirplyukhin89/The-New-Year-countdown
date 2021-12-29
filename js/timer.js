@@ -28,7 +28,7 @@
 
 
         if (leftUntilTime <= 0) {
-            document.querySelector('.title').innerText = 'Happy New Year!';
+            document.querySelector('.title').innerText = `It's holiday time!`;
             document.querySelector('.time-count__content').style.display = 'none';
             document.querySelector('.emoji').style.display = 'flex';
             clearInterval(interval);
