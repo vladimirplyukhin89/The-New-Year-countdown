@@ -2,6 +2,7 @@ const myAudio = document.getElementById("trackAudio");
 
 window.onload = function () {
     setTimeout(() => {
+        //myAudio.muted = false;
         myAudio.play();
-    }, 1000)
+    }, 2000)
 }
