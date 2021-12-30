@@ -7,8 +7,17 @@
 
         btnInHeader.addEventListener('click', (e) => {
             e.preventDefault();
-            const str = input.value[0].toUpperCase() + input.value.slice(1).toLowerCase();
-            out.innerHTML = str + '</br>';
+            const str = input.value;
+
+            const outStr = (str) => {
+                return str
+                    .toLowerCase()
+                    .split(' ')
+                    .map((word) => word[0].toUpperCase() + word.slice(1))
+                    .join(' ');
+            }
+
+            out.innerHTML = outStr(str);
             btnInHeader.disabled = true;
 
             if (out.classList.contains('appear')) {
